@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    /* RWTH colors */
+    --blue: rgb(0, 84, 159);
+    --black: rgb(0, 0, 0);
+    --petrol: rgb(0, 97, 101);
+    --turquoise: rgb(0, 152, 161);
+    --green: rgb(87, 171, 39);
+    --light-green: rgb(189, 205, 0);
+    --yellow: rgb(255, 237, 0);
+    --orange: rgb(246, 168, 0);
+    --red: rgb(204, 7, 30);
+    --magenta: rgb(227, 0, 102);
+    --bordeaux: rgb(161, 16, 53);
+    --violet: rgb(97, 33, 88);
+    --lilac: rgb(122, 111, 172);
+    /* Colors */
+    --white: #eff1f4;
+    --black: #202632;
+    --primary: rgb(0, 97, 101);
+    --secondary: rgb(246, 168, 0);
+    /* Fonts */
+    --font-family-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-sans-serif: system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue", sans-serif, var(--font-family-emoji);
+    --font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace, var(--font-family-emoji);
+    --font-family: sans-serif;
+    --bold: 700;
+    /* Layout */
+    --max-width: 80ch;
+    --section-ypad: 2rem;
+    /* Spacing */
+    --spacing: 1rem;
+    --text-ypad: 1rem;
+    /* Animations */
+    --transition: 0.2s ease-in-out;
+    /* Icons */
+    --icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(136, 145, 164)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+[data-theme="dark"] {
+    --white: #202632;
+    --black: #eff1f4;
+    --primary: rgb(246, 168, 0);
+    --secondary: rgb(0, 97, 101);
+
+}
