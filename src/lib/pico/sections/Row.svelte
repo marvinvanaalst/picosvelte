@@ -9,8 +9,14 @@
 <style>
 	div {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		width: 100%;
-		padding-bottom: var(--text-ypad);
+		padding-bottom: var(--base-spacing);
+	}
+
+	@media screen and (min-width: 42rem) {
+		div {
+			flex-direction: row;
+		}
 	}
 </style>

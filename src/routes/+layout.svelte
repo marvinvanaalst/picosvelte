@@ -1,5 +1,7 @@
 <script lang="ts">
 	import * as config from '$lib/config';
+	import Nav from '$lib/pico/nav/Nav.svelte';
+	import NavItem from '$lib/pico/nav/NavItem.svelte';
 	import '../app.css';
 
 	let { children } = $props();
@@ -14,5 +16,10 @@
 	<meta property="og:type" content="website" />
 	<meta name="twitter:card" content="summary" />
 </svelte:head>
+
+<Nav>
+	<NavItem href="/" name="Home" />
+	<NavItem href="/hexagons" name="Hexagons" />
+</Nav>
 
 {@render children()}

@@ -2,11 +2,11 @@
 	import type { Snippet } from 'svelte';
 	let {
 		href,
-		color = 'primary',
+		color = 'black',
 		children
 	}: {
 		href: string;
-		color?: 'black' | 'white' | 'primary' | 'secondary';
+		color?: 'black' | 'white';
 		children: Snippet;
 	} = $props();
 </script>
@@ -19,25 +19,18 @@
 	a {
 		font-family: sans-serif;
 		text-decoration: none;
-		/* text-decoration: currentcolor underline dashed auto; */
+		text-decoration: currentcolor underline auto;
 		transition: var(--transition);
-		margin: 0 0 var(--text-ypad) 0;
-		padding: 0 0.5ch;
+		margin: 0 0 var(--base-spacing) 0;
 	}
 	a:hover {
 		text-decoration: underline;
-		/* filter: brightness(150%); */
-	}
-	.black {
-		color: var(--black);
-	}
-	.white {
-		color: var(--white);
-	}
-	.primary {
 		color: var(--primary);
 	}
-	.secondary {
-		color: var(--secondary);
+	.black {
+		color: var(--l1);
+	}
+	.white {
+		color: var(--l9);
 	}
 </style>

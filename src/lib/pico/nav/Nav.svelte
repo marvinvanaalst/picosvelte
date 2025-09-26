@@ -29,7 +29,7 @@
 	nav {
 		margin: 0;
 		padding: 0;
-		background-color: var(--white);
+		background-color: var(--bg-lvl1);
 		font-family: var(--font-family);
 	}
 	details {
@@ -37,7 +37,7 @@
 	}
 	.inner {
 		margin: 0 auto;
-		max-width: var(--max-width);
+		max-width: var(--section-width);
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -47,10 +47,10 @@
 		text-align: center;
 		font-size: 1.2rem;
 		height: 32px;
-		padding: 0 calc(32px / 2);
+		padding: 0 var(--base-spacing);
 		border-radius: calc(32px / 2);
 		background-color: var(--secondary);
-		margin: 0.5rem;
+		margin: var(--base-spacing);
 		display: flex;
 		align-items: center;
 	}
@@ -81,7 +81,7 @@
 		flex-direction: column;
 		align-items: end;
 		z-index: 99;
-		background-color: var(--white);
+		background-color: var(--l9);
 	}
 
 	.bar {

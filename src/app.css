@@ -8,47 +8,87 @@
 
 
 :root {
-    /* RWTH colors */
-    --blue: rgb(0, 84, 159);
-    --black: rgb(0, 0, 0);
-    --petrol: rgb(0, 97, 101);
-    --turquoise: rgb(0, 152, 161);
-    --green: rgb(87, 171, 39);
-    --light-green: rgb(189, 205, 0);
-    --yellow: rgb(255, 237, 0);
-    --orange: rgb(246, 168, 0);
-    --red: rgb(204, 7, 30);
-    --magenta: rgb(227, 0, 102);
-    --bordeaux: rgb(161, 16, 53);
-    --violet: rgb(97, 33, 88);
-    --lilac: rgb(122, 111, 172);
     /* Colors */
-    --white: #eff1f4;
-    --black: #202632;
-    --primary: rgb(0, 97, 101);
-    --secondary: rgb(246, 168, 0);
+    --primary: hsl(201 98.9% 34.1%);
+    --secondary: hsl(221 19.1% 45.1%);
+    /* Elevation light levels */
+    --l1: hsl(201 16% 9%);
+    --l2: hsl(201 14% 13%);
+    /*
+    --l3: hsl(201 12% 30%);
+    --l4: hsl(201 10% 40%);
+    --l5: hsl(201 8% 50%);
+    --l6: hsl(201 6% 60%);
+    --l7: hsl(201 4% 80%);
+     */
+    --l8: hsl(201 2% 90%);
+    --l9: hsl(201 0% 95%);
     /* Fonts */
     --font-family-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-sans-serif: system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue", sans-serif, var(--font-family-emoji);
     --font-family-monospace: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace, var(--font-family-emoji);
     --font-family: sans-serif;
     --bold: 700;
-    /* Layout */
-    --max-width: 80ch;
-    --section-ypad: 2rem;
-    /* Spacing */
-    --spacing: 1rem;
-    --text-ypad: 1rem;
+    /* Layout and spacing*/
+    --base-spacing: 1rem;
+    --section-width: 80ch;
+    --section-pad: calc(2 * var(--base-spacing));
+
+
     /* Animations */
     --transition: 0.2s ease-in-out;
     /* Icons */
     --icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(136, 145, 164)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    --base-spacing: 1rem;
+    /* media queries */
+    --md: 40rem;
+    --lg: 80rem;
+}
+
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+    /* Text */
+    --text-default: var(--l1);
+    --text-contrast: var(--l9);
+    --text-primary: var(--primary);
+    --text-secondary: var(--secondary);
+    /* Background */
+    --bg-lvl1: var(--l8);
+    --bg-lvl2: var(--l9);
+    --bg-contrast: var(--l1);
+    --bg-primary: var(--primary);
+    --bg-secondary: var(--secondary);
+
+    body {
+        background: var(--l9);
+    }
 }
 
 [data-theme="dark"] {
-    --white: #202632;
-    --black: #eff1f4;
-    --primary: rgb(246, 168, 0);
-    --secondary: rgb(0, 97, 101);
+    /* Text */
+    --text-default: var(--l8);
+    --text-contrast: var(--l2);
+    --text-primary: var(--primary);
+    --text-secondary: var(--secondary);
+    /* Background by elevations*/
+    --bg-lvl1: var(--l1);
+    --bg-lvl2: var(--l2);
+    --bg-contrast: var(--l9);
+    --bg-primary: var(--primary);
+    --bg-secondary: var(--secondary);
 
+    body {
+        background: var(--l1);
+    }
 }
+
+/* 10 - 90 % HSl
+    --g0: rgb(26 26 26);
+    --g1: rgb(51 51 51);
+    --g1: rgb(77 77 77);
+    --g2: rgb(102 102 102);
+    --g3: rgb(128 128 128);
+    --g4: rgb(153 153 153);
+    --g5: rgb(179 179 179);
+    --g6: rgb(204 204 204);
+    --g7: rgb(230 230 230); */

@@ -75,7 +75,7 @@
 		border: none;
 		box-shadow: none;
 		outline: none;
-		padding: var(--pico-nav-element-spacing-vertical) var(--pico-nav-element-spacing-horizontal);
+		padding: var(--base-spacing) var(--base-spacing);
 	}
 	button:hover {
 		color: var(--pico-primary-hover);
