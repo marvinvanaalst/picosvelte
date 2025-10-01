@@ -14,7 +14,7 @@
 		padding-bottom: var(--base-spacing);
 	}
 
-	@media screen and (min-width: 42rem) {
+	@media (min-width: 42rem) {
 		div {
 			grid-template-columns: 1fr 1fr 1fr;
 		}

@@ -21,7 +21,7 @@
 		margin: 0;
 		padding: var(--section-pad) var(--section-pad);
 	}
-	@media screen and (min-width: 42rem) {
+	@media (min-width: 42rem) {
 		section {
 			padding: var(--section-pad) 0;
 		}

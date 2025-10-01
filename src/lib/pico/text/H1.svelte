@@ -24,7 +24,7 @@
 		font-family: var(--font-family);
 	}
 
-	@media screen and (min-width: 42rem) {
+	@media (min-width: 42rem) {
 		h1 {
 			font-size: 3rem;
 		}

@@ -25,7 +25,7 @@
 		flex-direction: column;
 		justify-content: center;
 	}
-	@media screen and (min-width: 42rem) {
+	@media (min-width: 42rem) {
 		header {
 			padding: var(--section-pad) 0;
 		}
